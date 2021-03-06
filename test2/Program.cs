@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace test2
 {
@@ -6,7 +7,11 @@ namespace test2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            while (true) {
+                Console.Beep();
+                Console.WriteLine("IIT");
+                Thread.Sleep(2000);
+            }
         }
     }
 }
